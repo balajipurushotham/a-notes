@@ -19,7 +19,6 @@
                     <button type="submit" class="text-blue-500">Unlike</button>
                 </form>
             @endif
-        @endauth
         
         <span class="place-self-center">{{ $post->likes->count() }} {{ Str::plural('Like',$post->likes->count())}} </span>
         
@@ -30,5 +29,6 @@
                 <button type="submit" class="bg-red-300 text-white px-4 px-y2 rounded font-medium text-right">Delete</button>
             </form>    
         @endif
+        @endauth
     </div>
 </div>
