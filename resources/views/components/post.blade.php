@@ -23,12 +23,12 @@
         
         <span class="place-self-center">{{ $post->likes->count() }} {{ Str::plural('Like',$post->likes->count())}} </span>
         
-        @can('delete')
+        @if ($post->ownedBy(auth()->user()))
             <form action=" {{ route('posts.destroy',$post)}}" method="POST" class="mr-1">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="bg-red-300 text-white px-4 px-y2 rounded font-medium text-right">Delete</button>
             </form>    
-        @endcan
+        @endif
     </div>
 </div>
