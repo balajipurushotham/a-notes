@@ -1,18 +1,22 @@
 # a-Notes
 
-make notes 
+* make notes 
 
-multi-user
+* multi-user
 
-like tracking
+* like tracking
 
-"what does this red button do"
+* "what does this red button do"
 
-(deletes notes !)
+* (deletes notes !)
 
+* register, login, logout
 
+***
 
 Laravel, PHP, Tailwind CSS, Postgresql
+
+live on [https://obscure-lake-51977.herokuapp.com/](https://obscure-lake-51977.herokuapp.com/)
 
 adapted from [posty](github.com/codecourse/posty-traversy-media)
 
